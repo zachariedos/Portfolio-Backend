@@ -1,0 +1,28 @@
+# Dossiers à ignorer
+node_modules/
+.pnpm-store/
+build/
+dist/
+public/
+
+# Fichiers de log
+*.log
+pnpm-debug.log*
+
+# Fichiers de configuration de l'éditeur
+.idea/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de cache
+.npm/
+.yarn/
+
+# Fichiers de configuration
+.env
+
+# Fichiers de verrouillage
+package-lock.json
+pnpm-lock.yaml
