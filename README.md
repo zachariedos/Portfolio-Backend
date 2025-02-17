@@ -2,6 +2,8 @@
 
 # <p align="center" style="align-item:center;background: -webkit-linear-gradient(to right, #f7ff00, #db36a4);background: linear-gradient(to right, #f7ff00, #db36a4);-webkit-background-clip: text; -webkit-text-fill-color: transparent;">Portfolio</p>
  
+[![Netlify Status](https://api.netlify.com/api/v1/badges/29188e31-07e1-4983-81af-a860d67bc761/deploy-status)](https://app.netlify.com/sites/zachariedosssantos-portfolio/deploys)
+
 
 
 <img src="https://images.emojiterra.com/twitter/512px/1f1ec-1f1e7.png" alt= "English flag" width="50">
