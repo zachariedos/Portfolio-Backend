@@ -4,6 +4,9 @@ const mongoose = require("mongoose");
 const experiencesRoutes = require("./routes/experiences");
 const sitesRoutes = require("./routes/sites");
 const auth = require("./routes/user");
+require("dotenv").config();
+const cors = require("cors");
+
 
 // MongoDB
 const mongodbUsername = process.env.MONGODB_USERNAME;
@@ -37,17 +40,11 @@ app.use((req, res, next) => {
 
 app.use(express.json());
 
+app.use(cors());
+
 // Routes
 app.use("/", experiencesRoutes);
 app.use("/portfolio", sitesRoutes);
 app.use("/auth", auth);
-
-// Définition du port
-const PORT = process.env.PORT || 3000;
-
-// Démarrer le serveur
-app.listen(PORT, () => {
-  console.log(`App démarrée sur : http://localhost:${PORT}`);
-});
 
 module.exports = app;

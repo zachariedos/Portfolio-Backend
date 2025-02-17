@@ -1,5 +1,6 @@
 const http = require("http");
 const app = require("./app");
+require("dotenv").config();
 
 const normalizePort = (val) => {
   const port = parseInt(val, 10);
@@ -12,7 +13,7 @@ const normalizePort = (val) => {
   }
   return false;
 };
-const port = normalizePort(process.env.PORT || "3000");
+const port = normalizePort(process.env.PORT || "80");
 app.set("port", port);
 
 const errorHandler = (error) => {
@@ -44,5 +45,7 @@ server.on("listening", () => {
   const bind = typeof address === "string" ? "pipe " + address : "port " + port;
   console.log("Listening on " + bind);
 });
+
+console?.log("Server started",process.env.PORT);
 
 server.listen(port,"0.0.0.0");
