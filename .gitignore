@@ -26,3 +26,6 @@ Thumbs.db
 # Fichiers de verrouillage
 package-lock.json
 pnpm-lock.yaml
+
+# Local Netlify folder
+.netlify

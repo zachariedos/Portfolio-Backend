@@ -4,6 +4,7 @@
   "description": "Back du portfolio en nodejs",
   "main": "server.js",
   "scripts": {
+      "start": "node --env-file=.env app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Zacharie DOS SANTOS",
@@ -16,5 +17,8 @@
     "mongoose-unique-validator": "^3.1.0",
     "multer": "^1.4.5-lts.1",
     "nodemon": "^2.0.19"
+  },
+  "engines": {
+    "node": "23.x"
   }
 }
